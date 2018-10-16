@@ -9,8 +9,8 @@ sub dump_array {
   foreach my $val (@arr) {
     $output .= $val.',';
   }
-  $final = "\n ######## \n array => {$output} \n ^^^^^^^^ \n";
-  print STDERR $final;
+  print 'array => {'.$output."}\n";
+  return $output;
 }
 
 sub dump_hash {
@@ -19,8 +19,7 @@ sub dump_hash {
   foreach my $key (keys (%overall)) {
     $output .= $key." => ".$overall{$key}." \n";
   }
-  $final = "\n ######## \n $output \n ^^^^^^^^ \n";
-  print STDERR $final;
+  print $output;
 }
 # ******* sub routine close ******* #
 
