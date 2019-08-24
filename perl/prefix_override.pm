@@ -59,3 +59,25 @@ sub var_dump {
     
     print "}\n";
 }
+
+# OUTPUT
+# If you want run this code in here.
+#https://www.tutorialspoint.com/execute_perl_online.php
+==========> Before prefix override <==========
+{
+	 name2 => Vasanthi, 
+	 name1 => Hen, 
+	 ani.name1 => Cow, 
+	 human.name => Bala, 
+	 name => Jack, 
+	 bird.name1 => Crow, 
+	 human.name2 => GUI, 
+	 animal.ani.name1 => Monkey, 
+}
+==========> After prefix override <==========
+{
+	 name1 => Crow, 
+	 ani.name1 => Monkey, 
+	 name => Bala, 
+	 name2 => GUI, 
+}
